@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUTA TV Music Challenge 2026</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080808;color:white;font-family:Arial,sans-serif}
+header{text-align:center;padding:25px 15px;background:#111;border-bottom:2px solid #d4af37}
+h1{color:#e5c44b;margin:10px}
+header p{color:#ddd}
+select{padding:10px;border-radius:7px;background:#222;color:white;border:1px solid #d4af37}
+main{max-width:750px;margin:auto;padding:20px}
+.card{background:#151515;border:1px solid #393326;border-radius:14px;padding:22px;margin:20px 0}
+h2{color:#e5c44b}
+label{display:block;margin-top:14px}
+input{width:100%;padding:13px;margin-top:7px;background:#222;color:white;border:1px solid #555;border-radius:7px}
+button{background:#d4af37;color:#080808;border:0;padding:13px 18px;border-radius:7px;font-weight:bold;margin-top:16px;cursor:pointer}
+.note{color:#ccc;font-size:14px;line-height:1.6}
+footer{text-align:center;padding:25px;color:#aaa;border-top:1px solid #333}
+</style>
+</head>
+<body>
+<header>
+<h1>👑 MUTA TV®</h1>
+<h2 data-i="title">MUSIC CHALLENGE 2026 🎤</h2>
+<p data-i="tagline">Show your talent. Share your music. Make history.</p>
+<label for="language" data-i="choose">Choose your language</label>
+<select id="language" aria-label="Choose language">
+<option value="en">🇬🇧 English</option>
+<option value="sw">🇹🇿 Kiswahili</option>
+<option value="fr">🇫🇷 Français</option>
+<option value="ar">🇸🇦 العربية</option>
+<option value="es">🇪🇸 Español</option>
+<option value="pt">🇵🇹 Português</option>
+<option value="ln">🇨🇩 Lingala</option>
+<option value="zh">🇨🇳 中文</option>
+<option value="hi">🇮🇳 हिन्दी</option>
+<option value="de">🇩🇪 Deutsch</option>
+</select>
+</header><main>
+<section class="card">
+<h2 data-i="join">🔥 Join the Challenge</h2>
+<p data-i="intro">Are you a talented artist? Submit your music video and join the MUTA TV Music Challenge!</p>
+<form id="entryForm">
+<label for="artist" data-i="artist">Artist name</label>
+<input id="artist" name="artist" required data-p="artistph" placeholder="Your stage name"><label for="song" data-i="song">Song title</label>
+<input id="song" name="song" required data-p="songph" placeholder="Your song title">
+
+<label for="video" data-i="video">Music video link</label>
+<input id="video" name="video" type="url" required placeholder="https://...">
+
+<label for="social" data-i="social">Your social media profile (optional)</label>
+<input id="social" name="social" type="url" placeholder="https://...">
+
+<button type="submit" data-i="submit">Submit Entry</button>
+
+</form>
+<p class="note" data-i="notice">Demo form: entries are not saved or sent to administrators yet.</p>
+</section><section class="card">
+<h2 data-i="winners">🏆 Winners</h2>
+<p data-i="announce">Winners will be announced here by the MUTA TV team.</p>
+<p data-i="first">🥇 First Place: To be announced</p>
+<p data-i="second">🥈 Second Place: To be announced</p>
+<p data-i="third">🥉 Third Place: To be announced</p>
+</section><section class="card">
+<h2 data-i="follow">📱 Follow MUTA TV</h2>
+<p class="note" data-i="links">Official social media links will be added here.</p>
+</section>
+</main>
+<footer>© 2026 MUTA TV® — <span data-i="footer">Music connects the world.</span></footer><script>
+const translations={
+en:{title:"MUSIC CHALLENGE 2026 🎤",tagline:"Show your talent. Share your music. Make history.",choose:"Choose your language",join:"🔥 Join the Challenge",intro:"Are you a talented artist? Submit your music video and join the MUTA TV Music Challenge!",artist:"Artist name",artistph:"Your stage name",song:"Song title",songph:"Your song title",video:"Music video link",social:"Your social media profile (optional)",submit:"Submit Entry",notice:"Demo form: entries are not saved or sent to administrators yet.",winners:"🏆 Winners",announce:"Winners will be announced here by the MUTA TV team.",first:"🥇 First Place: To be announced",second:"🥈 Second Place: To be announced",third:"🥉 Third Place: To be announced",follow:"📱 Follow MUTA TV",links:"Official social media links will be added here.",footer:"Music connects the world.",alert:"Thank you! This demo form is not connected to a submission database yet."},
+sw:{title:"CHANGAMOTO CHA MUZIKI 2026 🎤",tagline:"Onyesha kipaji chako. Shiriki muziki wako. Andika historia.",choose:"Chagua lugha yako",join:"🔥 Jiunge na Changamoto",intro:"Una kipaji cha muziki? Tuma video yako ya muziki na ujiunge na MUTA TV Music Challenge!",artist:"Jina la msanii",artistph:"Jina lako la kisanii",song:"Jina la wimbo",songph:"Andika jina la wimbo",video:"Link ya video ya muziki",social:"Link ya akaunti yako ya mitandao (si lazima)",submit:"Tuma Maombi",notice:"Fomu hii ni ya majaribio: taarifa hazijahifadhiwa wala kutumwa kwa wasimamizi.",winners:"🏆 Washindi",announce:"Washindi watatangazwa hapa na timu ya MUTA TV.",first:"🥇 Nafasi ya kwanza: Itatangazwa",second:"🥈 Nafasi ya pili: Itatangazwa",third:"🥉 Nafasi ya tatu: Itatangazwa",follow:"📱 Fuata MUTA TV",links:"Link rasmi za mitandao zitaongezwa hapa.",footer:"Muziki unaunganisha dunia.",alert:"Asante! Fomu hii bado haijaunganishwa na mfumo wa kuhifadhi maombi."},
+fr:{title:"DÉFI MUSICAL 2026 🎤",tagline:"Montrez votre talent. Partagez votre musique. Marquez l'histoire.",choose:"Choisissez votre langue",join:"🔥 Rejoindre le défi",intro:"Vous êtes artiste ? Envoyez votre clip et participez au défi musical MUTA TV !",artist:"Nom de l'artiste",artistph:"Votre nom de scène",song:"Titre de la chanson",songph:"Le titre de votre chanson",video:"Lien du clip musical",social:"Profil sur les réseaux sociaux (facultatif)",submit:"Envoyer",notice:"Formulaire de démonstration : les candidatures ne sont pas encore enregistrées.",winners:"🏆 Gagnants",announce:"Les gagnants seront annoncés ici par MUTA TV.",first:"🥇 Première place : à annoncer",second:"🥈 Deuxième place : à annoncer",third:"🥉 Troisième place : à annoncer",follow:"📱 Suivez MUTA TV",links:"Les liens officiels seront ajoutés ici.",footer:"La musique relie le monde.",alert:"Merci ! Ce formulaire n'est pas encore relié à une base de données."},
+ar:{title:"تحدي الموسيقى 2026 🎤",tagline:"أظهر موهبتك وشارك موسيقاك واكتب التاريخ.",choose:"اختر لغتك",join:"🔥 انضم إلى التحدي",intro:"هل أنت فنان موهوب؟ أرسل فيديو الموسيقى وانضم إلى تحدي MUTA TV!",artist:"اسم الفنان",artistph:"اسمك الفني",song:"عنوان الأغنية",songph:"اكتب عنوان الأغنية",video:"رابط فيديو الموسيقى",social:"حسابك على وسائل التواصل (اختياري)",submit:"إرسال المشاركة",notice:"نموذج تجريبي: لم يتم حفظ المشاركات أو إرسالها إلى المسؤولين.",winners:"🏆 الفائزون",announce:"سيعلن فريق MUTA TV عن الفائزين هنا.",first:"🥇 المركز الأول: سيعلن لاحقاً",second:"🥈 المركز الثاني: سيعلن لاحقاً",third:"🥉 المركز الثالث: سيعلن لاحقاً",follow:"📱 تابع MUTA TV",links:"ستضاف روابط التواصل الرسمية هنا.",footer:"الموسيقى تربط العالم.",alert:"شكراً! النموذج غير متصل بقاعدة بيانات حالياً."},
+es:{title:"RETO MUSICAL 2026 🎤",tagline:"Muestra tu talento. Comparte tu música. Haz historia.",choose:"Elige tu idioma",join:"🔥 Únete al reto",intro:"¿Tienes talento musical? Envía tu videoclip y participa en el reto musical de MUTA TV.",artist:"Nombre del artista",artistph:"Tu nombre artístico",song:"Título de la canción",songph:"Título de tu canción",video:"Enlace del videoclip",social:"Perfil en redes sociales (opcional)",submit:"Enviar participación",notice:"Formulario de demostración: las participaciones aún no se guardan.",winners:"🏆 Ganadores",announce:"El equipo de MUTA TV anunciará aquí a los ganadores.",first:"🥇 Primer lugar: por anunciar",second:"🥈 Segundo lugar: por anunciar",third:"🥉 Tercer lugar: por anunciar",follow:"📱 Sigue a MUTA TV",links:"Los enlaces oficiales se añadirán aquí.",footer:"La música conecta el mundo.",alert:"¡Gracias! Este formulario aún no está conectado a una base de datos."},
+pt:{title:"DESAFIO MUSICAL 2026 🎤",tagline:"Mostre seu talento. Compartilhe sua música. Faça história.",choose:"Escolha seu idioma",join:"🔥 Participe do desafio",intro:"Você tem talento musical? Envie seu videoclipe e participe do desafio musical MUTA TV!",artist:"Nome do artista",artistph:"Seu nome artístico",song:"Título da música",songph:"Título da sua música",video:"Link do videoclipe",social:"Perfil nas redes sociais (opcional)",submit:"Enviar inscrição",notice:"Formulário de demonstração: as inscrições ainda não são guardadas.",winners:"🏆 Vencedores",announce:"A equipe MUTA TV anunciará os vencedores aqui.",first:"🥇 Primeiro lugar: a anunciar",second:"🥈 Segundo lugar: a anunciar",third:"🥉 Terceiro lugar: a anunciar",follow:"📱 Siga a MUTA TV",links:"Os links oficiais serão adicionados aqui.",footer:"A música conecta o mundo.",alert:"Obrigado! Este formulário ainda não está conectado a uma base de dados."},
+ln:{title:"MOMEKANO YA MIZIKI 2026 🎤",tagline:"Lakisa talent na yo. Kabola miziki na yo. Sala histoire.",choose:"Pona monoko na yo",join:"🔥 Kota na momekano",intro:"Ozali artiste ya talent? Tinda video ya miziki na yo mpe kota na MUTA TV Music Challenge!",artist:"Kombo ya artiste",artistph:"Kombo na yo ya scène",song:"Kombo ya nzembo",songph:"Kombo ya nzembo na yo",video:"Lien ya video ya miziki",social:"Profil na yo ya réseaux sociaux (optionnel)",submit:"Tinda participation",notice:"Formulaire ya komeka: ba participations ebombami naino te.",winners:"🏆 Bato oyo balongi",announce:"MUTA TV ekoyebisa awa bato oyo balongi.",first:"🥇 Esika ya liboso: ekoyebisama",second:"🥈 Esika ya mibale: ekoyebisama",third:"🥉 Esika ya misato: ekoyebisama",follow:"📱 Landela MUTA TV",links:"Ba liens officiels ekobakisama awa.",footer:"Miziki ekangisaka mokili.",alert:"Matondo! Formulaire oyo ekangami naino te na base de données."},
+zh:{title:"2026音乐挑战 🎤",tagline:"展示才华，分享音乐，创造历史。",choose:"选择语言",join:"🔥 参加挑战",intro:"你有音乐才华吗？提交音乐视频，参加 MUTA TV 音乐挑战！",artist:"艺人姓名",artistph:"你的艺名",song:"歌曲名称",songph:"输入歌曲名称",video:"音乐视频链接",social:"社交媒体主页（可选）",submit:"提交参赛",notice:"演示表单：参赛信息尚未保存或发送给管理员。",winners:"🏆 获奖者",announce:"MUTA TV 团队将在这里公布获奖者。",first:"🥇 第一名：待公布",second:"🥈 第二名：待公布",third:"🥉 第三名：待公布",follow:"📱 关注 MUTA TV",links:"官方社交媒体链接将在这里添加。",footer:"音乐连接世界。",alert:"谢谢！此表单尚未连接到报名数据库。"},
+hi:{title:"संगीत चुनौती 2026 🎤",tagline:"अपनी प्रतिभा दिखाएँ। अपना संगीत साझा करें। इतिहास बनाएँ।",choose:"अपनी भाषा चुनें",join:"🔥 चुनौती में शामिल हों",intro:"क्या आप प्रतिभाशाली कलाकार हैं? अपना संगीत वीडियो भेजें और MUTA TV चुनौती में शामिल हों!",artist:"कलाकार का नाम",artistph:"आपका मंच नाम",song:"गाने का शीर्षक",songph:"अपने गाने का शीर्षक",video:"संगीत वीडियो लिंक",social:"सोशल मीडिया प्रोफ़ाइल (वैकल्पिक)",submit:"प्रविष्टि भेजें",notice:"डेमो फ़ॉर्म: प्रविष्टियाँ अभी सहेजी नहीं जातीं।",winners:"🏆 विजेता",announce:"MUTA TV टीम यहाँ विजेताओं की घोषणा करेगी।",first:"🥇 पहला स्थान: घोषित होना बाकी",second:"🥈 दूसरा स्थान: घोषित होना बाकी",third:"🥉 तीसरा स्थान: घोषित होना बाकी",follow:"📱 MUTA TV को फ़ॉलो करें",links:"आधिकारिक सोशल मीडिया लिंक यहाँ जोड़े जाएँगे।",footer:"संगीत दुनिया को जोड़ता है।",alert:"धन्यवाद! यह फ़ॉर्म अभी डेटाबेस से जुड़ा नहीं है।"},
+de:{title:"MUSIK-CHALLENGE 2026 🎤",tagline:"Zeige dein Talent. Teile deine Musik. Schreibe Geschichte.",choose:"Sprache auswählen",join:"🔥 An der Challenge teilnehmen",intro:"Du bist musikalisch talentiert? Sende dein Musikvideo und nimm an der MUTA TV Music Challenge teil!",artist:"Künstlername",artistph:"Dein Künstlername",song:"Songtitel",songph:"Titel deines Songs",video:"Link zum Musikvideo",social:"Social-Media-Profil (optional)",submit:"Beitrag senden",notice:"Demoformular: Beiträge werden noch nicht gespeichert oder an Administratoren gesendet.",winners:"🏆 Gewinner",announce:"Das MUTA-TV-Team gibt die Gewinner hier bekannt.",first:"🥇 Erster Platz: wird bekannt gegeben",second:"🥈 Zweiter Platz: wird bekannt gegeben",third:"🥉 Dritter Platz: wird bekannt gegeben",follow:"📱 Folge MUTA TV",links:"Offizielle Social-Media-Links werden hier ergänzt.",footer:"Musik verbindet die Welt.",alert:"Danke! Dieses Formular ist noch nicht mit einer Datenbank verbunden."}
+};
+function setLanguage(lang){
+const t=translations[lang]||translations.en;
+document.documentElement.lang=lang;
+document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+document.querySelectorAll("[data-i]").forEach(el=>{const k=el.dataset.i;if(t[k])el.textContent=t[k]});
+document.querySelectorAll("[data-p]").forEach(el=>{const k=el.dataset.p;if(t[k])el.placeholder=t[k]});
+}
+document.getElementById("language").addEventListener("change",e=>setLanguage(e.target.value));
+document.getElementById("entryForm").addEventListener("submit",e=>{
+e.preventDefault();
+const lang=document.getElementById("language").value;
+alert(translations[lang].alert);
+});
+setLanguage("en");
+</script></body>
+</html>
